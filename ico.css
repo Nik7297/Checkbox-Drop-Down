@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#wrapper {
+    background-color: black;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.text {
+    color: #fff;
+    position: absolute;
+    top: -10%;
+    font-size: xx-large;
+    transition-duration: 1s;
+}
+.box:hover .text {
+    color: blue;
+    background-color: #fff;
+}
+.center:hover .iconcenter {
+    color: palevioletred;
+}
+.box {
+    background-color: beige;
+    height: 500px;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: xx-large;
+    position: relative;
+}
+.center input {
+    height: 80px;
+    width: 80px;
+    margin: 10px 0 0 20px;
+    opacity: 0;
+    z-index: 100;
+}
+.icon i {
+    position: absolute;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.center input {
+    position: fixed;
+}
+.iconcenter {
+    font-size: 80px;
+    overflow: hidden;
+    position: fixed;
+    top: 45%;
+    left: 45%;
+    z-index: 10;
+}
+.icon i {
+    transition-duration: 1s;
+}
+.icon1 {
+    margin: 5px 0 0 5px;
+    color: orangered;
+    top: 0;
+    left: 0;
+}
+.icon2 {
+    margin: 5px 5px 0 0;
+    color: orangered;
+    top: 0;
+    right: 0;
+}
+.icon3 {
+    margin: 0 0 5px 5px;
+    color: orangered;
+    bottom: 0;
+    left: 0;
+}
+.icon4 {
+    margin: 0 5px 5px 0;
+    color: orangered;
+    bottom: 0;
+    right: 0;
+}
+.box .center input:checked+.icon .icon1 {
+    background-color: rgb(188, 205, 90);
+    top: 50%;
+    left: 50%;
+}
+.box .center input:checked+.icon .icon2 {
+    background-color: rgb(188, 205, 90);
+    top: 48%;
+    right: 43%;
+}
+.box .center input:checked+.icon .icon3 {
+    background-color: rgb(188, 205, 90);
+    bottom: 44%;
+    left: 49%;
+}
+.box .center input:checked+.icon .icon4 {
+    background-color: rgb(188, 205, 90);
+    bottom: 44%;
+    right: 44%;
+}
